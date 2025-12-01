@@ -4,41 +4,35 @@ import { useState, useRef } from 'react'
 const slideImages = [
     {
         id: 1,
-        name: "Red bird, Tanzania, 2025",
+        name: "Red bird",
+        place: "Tanzania 2025.",
         image: "/slides/1.jpeg",
     },
     {
         id: 2,
-        name: "Monkey, Tanzania, 2025",
+        name: "Monkey",
+        place: "Tanzania 2025.",
         image: "/slides/2.jpeg",
     },
     {
         id: 3,
-        name: "Bird, Denmark, 2025",
+        name: "Bird",
+        place: "Denmark 2025.",
         image: "/slides/3.jpg",
     },
     {
         id: 4,
-        name: "Yellow bird, Denmark, 2025",
+        name: "Yellow bird",
+        place: "Denmark 2025.",
         image: "/slides/4.jpeg",
     },
     {
         id: 5,
-        name: "Spider, Tanzania, 2025",
+        name: "Spider",
+        place: "Tanzania 2025.",
         image: "/slides/5.jpeg",
     },
 ]
-
-const SlideCenter = ({ frame }) => (
-    <div className="flex flex-col items-center justify-center overflow-x w-3/4 shrink-0">
-        <img 
-            src={frame.image} 
-            className="object-cover overflow-hidden" />
-        <p className="font-regular text-base text-primary mt-2">
-            {frame.name}
-        </p>
-    </div>
-)
 
 const LandingSlides = () => {
     const [index, setIndex] = useState(0);
@@ -59,7 +53,7 @@ const LandingSlides = () => {
                 return (
                     <div
                         key={slide.id}
-                        className={`absolute flex flex-col items-center transition-all duration-400 ease-out cursor-pointer -z-10
+                        className={`absolute flex flex-col items-center transition-all duration-700 ease-out cursor-pointer -z-10
                             ${isCenter ? 'cursor-default' : 'cursor-pointer'}`}
                         style={{
                             transform: `translateX(${baseX}px) scale(${scale})`,
@@ -75,6 +69,11 @@ const LandingSlides = () => {
                         {isCenter && (
                             <p className="mt-4 text-primary font-regular text-lg text-center">
                                 {slide.name}
+                            </p>
+                        )}
+                        {isCenter && (
+                            <p className="text-secondary font-light text-lg text-center">
+                                {slide.place}
                             </p>
                         )}
                     </div>

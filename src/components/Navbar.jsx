@@ -12,7 +12,7 @@ const NavBar = () => {
                 Peitersen Photography
             </h1>
 
-            <ul className="flex flex-wrap md:flex-row justify-end items-center gap-8 lg:gap-12 font-light text-base">
+            <ul className="flex justify-end items-center gap-8 lg:gap-12 font-light text-base">
                 {label.map((label) => (
                     <li key={label}>
                         <p
