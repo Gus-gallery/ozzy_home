@@ -11,8 +11,8 @@
 }
 
 @font-face {
-  font-family: "SemiBold";
-  src: url("/fonts/semibold.ttf");
+  font-family: "Light";
+  src: url("/fonts/light.ttf");
 }
 
 @font-face {
@@ -21,12 +21,12 @@
 }
 
 @theme {
-  --color-primary: #e4e4e4;
-  --color-secondary: #AFB3BD;
+  --color-primary: #BAB8B3;
+  --color-secondary: #72716E;
   --color-backgroundsecondary: #363c49;
   --font-regular: "Regular";
   --font-medium: "Medium";
-  --font-semibold: "SemiBold";
+  --font-light: "Light";
   --font-bold: "Bold";
 }
 
@@ -36,7 +36,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: dark;
   color: #BAB8B3;
   background-color: #101010;
 
