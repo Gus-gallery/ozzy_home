@@ -6,13 +6,13 @@ const NavBar = () => {
     const label = ["Projects", "About"];
 
   return (
-    <header className="sticky">
+    <header className="sticky bg-backgroundsecondary">
         <nav className="container mx-auto flex flex-wrap items-center p-4 justify-between">
             <h1 className="text-lg font-regular">
                 Peitersen Photography
             </h1>
 
-            <ul className="flex flex-wrap md:flex-row justify-end items-center gap-8 lg:gap-8 font-regular text-base">
+            <ul className="flex flex-wrap md:flex-row justify-end items-center gap-8 lg:gap-12 font-light text-base">
                 {label.map((label) => (
                     <li key={label}>
                         <p
