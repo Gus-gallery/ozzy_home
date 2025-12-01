@@ -37,51 +37,51 @@ const slideImages = [
 const LandingSlides = () => {
     const [index, setIndex] = useState(0);
 
-  return (
-    <section id="slides" className="overflow-hidden relative px-16 h-screen -mt-12 flex justify-center items-center">
-        <div className="relative flex justify-center w-full h-full lg:w-3/4 lg:h-2/3 items-center">
-            {slideImages.map((slide, i) => {
-                const offset = i - index;
-                const isCenter = offset === 0;
+    return (
+        <section id="slides" className="overflow-hidden relative px-16 h-screen -mt-12 flex justify-center items-center">
+            <div className="relative flex justify-center w-full h-full lg:w-3/4 lg:h-2/3 items-center">
+                {slideImages.map((slide, i) => {
+                    const offset = i - index;
+                    const isCenter = offset === 0;
 
-                const SPACING = 1/1.7*window.innerWidth;
-                const baseX = offset * SPACING;
-                const scale = isCenter ? 1 : 0.50;
-                const opacity = isCenter ? 1 : 0.20;
-                const zIndex = isCenter ? 10 : Math.abs(offset);
+                    const SPACING = 1 / 1.7 * window.innerWidth;
+                    const baseX = offset * SPACING;
+                    const scale = isCenter ? 1 : 0.50;
+                    const opacity = isCenter ? 1 : 0.20;
+                    const zIndex = isCenter ? 10 : Math.abs(offset);
 
-                return (
-                    <div
-                        key={slide.id}
-                        className={`absolute flex flex-col items-center transition-all duration-700 ease-out cursor-pointer -z-10
-                            ${isCenter ? 'cursor-default' : 'cursor-pointer'}`}
-                        style={{
-                            transform: `translateX(${baseX}px) scale(${scale})`,
-                            opacity,
-                            zIndex,
-                        }}
-                        onClick = {() => { if (!isCenter) setIndex(i);
-                        }} >
-                        <img
-                            src={slide.image}
-                            className="w-full h-auto object-cover"
-                        />
-                        {isCenter && (
-                            <p className="mt-4 text-primary font-regular text-lg text-center">
-                                {slide.name}
-                            </p>
-                        )}
-                        {isCenter && (
-                            <p className="text-secondary font-light text-lg text-center">
-                                {slide.place}
-                            </p>
-                        )}
-                    </div>
-                );
-            })}
-        </div>
-    </section>
-  )
+                    return (
+                        <div
+                            key={slide.id}
+                            className="absolute flex flex-col items-center transition-all duration-600 ease-out cursor-pointer -z-10"
+                            style={{
+                                transform: `translateX(${baseX}px) scale(${scale})`,
+                                opacity,
+                                zIndex,
+                            }}
+                            onClick={() => {
+                                if (!isCenter) setIndex(i);
+                            }} >
+                            <img
+                                src={slide.image}
+                                className="w-full h-auto object-cover"
+                            />
+                            {isCenter && (
+                                <p className="mt-4 text-primary font-regular text-lg text-center">
+                                    {slide.name}
+                                </p>
+                            )}
+                            {isCenter && (
+                                <p className="text-secondary font-regular text-lg text-center">
+                                    {slide.place}
+                                </p>
+                            )}
+                        </div>
+                    );
+                })}
+            </div>
+        </section>
+    )
 }
 
 export default LandingSlides
