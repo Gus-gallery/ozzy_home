@@ -45,21 +45,21 @@ const LandingSlides = () => {
 
   return (
     <section id="slides" className="overflow-hidden relative px-16 h-screen -mt-12 flex justify-center items-center">
-        <div className="relative flex justify-center w-2/3 h-2/3 items-center">
+        <div className="relative flex justify-center w-full h-full lg:w-3/4 lg:h-2/3 items-center">
             {slideImages.map((slide, i) => {
                 const offset = i - index;
                 const isCenter = offset === 0;
 
-                var SPACING = 1/2*screen.width;
+                const SPACING = 1/1.7*window.innerWidth;
                 const baseX = offset * SPACING;
                 const scale = isCenter ? 1 : 0.50;
                 const opacity = isCenter ? 1 : 0.20;
-                const zIndex = 10 - Math.abs(offset);
+                const zIndex = isCenter ? 10 : Math.abs(offset);
 
                 return (
                     <div
                         key={slide.id}
-                        className={`absolute flex flex-col items-center transition-all duration-400 ease-out cursor-pointer 
+                        className={`absolute flex flex-col items-center transition-all duration-400 ease-out cursor-pointer -z-10
                             ${isCenter ? 'cursor-default' : 'cursor-pointer'}`}
                         style={{
                             transform: `translateX(${baseX}px) scale(${scale})`,
@@ -73,7 +73,7 @@ const LandingSlides = () => {
                             className="w-full h-auto object-cover"
                         />
                         {isCenter && (
-                            <p className="mt-4 text-primary font-medium text-lg text-center">
+                            <p className="mt-4 text-primary font-regular text-lg text-center">
                                 {slide.name}
                             </p>
                         )}

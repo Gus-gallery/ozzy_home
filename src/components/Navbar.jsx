@@ -6,9 +6,9 @@ const NavBar = () => {
     const label = ["Projects", "About"];
 
   return (
-    <header className="sticky bg-backgroundsecondary">
+    <header className="sticky bg-backgroundsecondary z-20">
         <nav className="container mx-auto flex flex-wrap items-center p-4 justify-between">
-            <h1 className="text-lg font-regular">
+            <h1 className="text-lg font-light">
                 Peitersen Photography
             </h1>
 
