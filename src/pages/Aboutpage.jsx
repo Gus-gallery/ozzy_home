@@ -2,7 +2,9 @@ import React from 'react'
 
 const Aboutpage = () => {
   return (
-    <div>Aboutpage</div>
+    <div>
+        <NavBar />
+    </div>
   )
 }
 
