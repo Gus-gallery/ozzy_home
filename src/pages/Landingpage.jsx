@@ -1,12 +1,12 @@
 import React from 'react'
-import NavBar from '../components/Navbar'
-import LandingSlides from '../components/LandingSlides'
+import NavHome from '../components/NavHome'
+import LandingBG from '../components/LandingBG'
 
 const Landingpage = () => {
   return (
     <div>
-        <NavBar />
-        <LandingSlides />
+        <NavHome />
+        <LandingBG />
     </div>
   )
 }

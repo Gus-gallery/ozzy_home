@@ -36,13 +36,12 @@ const slideImages = [
 
 const LandingSlides = () => {
     const [index, setIndex] = useState(0);
-
-    const [mode, setMode] = useState('background');
-    const [currentImage, setCurrentImage] = useState(0);
+    const [isFullscreen, setIsFullscreen] = useState(false)
 
     return (
         <section id="landing" className="overflow-hidden relative px-16 h-screen flex justify-center items-center">
             <div className="relative flex justify-center -mt-20 w-full h-full lg:w-3/4 lg:h-2/3 items-center">
+                
                 {slideImages.map((slide, i) => {
                     const offset = i - index;
                     const isCenter = offset === 0;
@@ -63,15 +62,12 @@ const LandingSlides = () => {
                                 zIndex,
                             }}
                                 onClick={() => {                                    if (!isCenter) {
-                                    setIndex(i)
-                                } else {
-                                    setMode("background");
-                                    setCurrentImage(i);
+                                    setIndex(i);
                                 }
                             }} >
                             <img                                    
                             src={slide.image}
-                            className="w-full h-auto object-cover"
+                            className="w-full rounded-md h-auto object-cover"
                             />
                             {isCenter && (
                                 <p className="mt-4 text-primary font-medium text-lg text-center">
