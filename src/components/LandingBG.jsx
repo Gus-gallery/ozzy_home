@@ -37,6 +37,12 @@ const bgImages = [
         place: "Denmark 2025.",
         image: "/dk/9.jpg",
     },
+    {
+        id: 7,
+        name: "Krage",
+        place: "Norway 2024.",
+        image: "/nw/2.jpg",
+    },
 ]
 
 

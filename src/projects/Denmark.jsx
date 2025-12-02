@@ -15,7 +15,7 @@ const Denmark = () => {
                 </p>
             </div>
 
-            <div className="mt-4 grid grid-cols-1 xl:grid-cols-2 gap-2">
+            <div className="mt-4 grid grid-cols-1 xl:grid-cols-2 gap-2 pb-4">
                 {[1,2,3,4,5,6,7,8,9,10].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 

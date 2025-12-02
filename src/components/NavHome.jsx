@@ -9,7 +9,7 @@ const NavBar = () => {
     <header className="sticky text-backgroundsecondary z-20">
         <nav className="flex flex-wrap items-center text-center p-4 px-6 justify-between">
             <Link to="/" className="text-lg font-bold">
-                Peitersen Photography
+                Oskar Peitersen Photo
             </Link>
 
             <ul className="flex justify-end items-center text-center gap-8 font-medium text-base">
