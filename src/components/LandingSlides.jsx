@@ -37,9 +37,12 @@ const slideImages = [
 const LandingSlides = () => {
     const [index, setIndex] = useState(0);
 
+    const [mode, setMode] = useState('background');
+    const [currentImage, setCurrentImage] = useState(0);
+
     return (
-        <section id="slides" className="overflow-hidden relative px-16 h-screen -mt-12 flex justify-center items-center">
-            <div className="relative flex justify-center w-full h-full lg:w-3/4 lg:h-2/3 items-center">
+        <section id="landing" className="overflow-hidden relative px-16 h-screen flex justify-center items-center">
+            <div className="relative flex justify-center -mt-20 w-full h-full lg:w-3/4 lg:h-2/3 items-center">
                 {slideImages.map((slide, i) => {
                     const offset = i - index;
                     const isCenter = offset === 0;
@@ -59,22 +62,26 @@ const LandingSlides = () => {
                                 opacity,
                                 zIndex,
                             }}
-                            onClick={() => {
-                                if (!isCenter) setIndex(i);
+                                onClick={() => {                                    if (!isCenter) {
+                                    setIndex(i)
+                                } else {
+                                    setMode("background");
+                                    setCurrentImage(i);
+                                }
                             }} >
-                            <img
-                                src={slide.image}
-                                className="w-full h-auto object-cover"
+                            <img                                    
+                            src={slide.image}
+                            className="w-full h-auto object-cover"
                             />
                             {isCenter && (
-                                <p className="mt-4 text-primary font-regular text-lg text-center">
+                                <p className="mt-4 text-primary font-medium text-lg text-center">
                                     {slide.name}
                                 </p>
                             )}
                             {isCenter && (
                                 <p className="text-secondary font-regular text-lg text-center">
                                     {slide.place}
-                                </p>
+                                </p>                               
                             )}
                         </div>
                     );
