@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from '../components/Navbar'
+import { Link } from 'react-router-dom'
 
 const Projects = () => {
     const projects = ["Denmark", "Norway", "Tanzania"];
@@ -8,9 +9,9 @@ const Projects = () => {
     <div>
         <NavBar />
         <div className="h-screen flex justify-center items-center">
-            <ul className="text-lg font-regular text-primary opacity-60 transition-all duration-300 ease-in-out hover:opacity-100">
+            <ul className="text-2xl font-regular -mt-16 text-center text-primary opacity-60 transition-all duration-300 ease-in-out hover:opacity-100">
                 {projects.map((project) => (
-                    <li key={project}>
+                    <li key={project} className="p-4">
                         <Link to={'/projects/' + project.toLowerCase()}
                         className="opacity-60 cursor-pointer hover:opacity-100 transition-all duration-300 ease-in-out" 
                         >

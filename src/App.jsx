@@ -1,3 +1,4 @@
+import React from "react"
 import { Route, Routes } from "react-router-dom"
 import Landingpage from "./pages/Landingpage"
 import Aboutpage from "./pages/Aboutpage"
@@ -8,8 +9,8 @@ function App() {
     <main>
       <Routes>
         <Route path="/" element={<Landingpage />} />
-        <Route path="about" element={<Aboutpage />} />
-        <Route path="projects" element={<Projects />} />
+        <Route path="/about" element={<Aboutpage />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </main>
   )

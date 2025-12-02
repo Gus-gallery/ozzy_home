@@ -6,7 +6,7 @@ const NavBar = () => {
     const label = ["Projects", "About"];
 
   return (
-    <header class="navbar" className="sticky text-primary z-20">
+    <header className="sticky text-primary z-20">
         <nav className="flex flex-wrap items-center text-center p-4 px-6 justify-between">
             <Link to="/" className="text-lg font-regular">
                 Peitersen Photography
@@ -16,7 +16,7 @@ const NavBar = () => {
                 {label.map((label) => (
                     <li key={label}>
 
-                        <Link to={'/' + label.toLowerCase()}
+                        <Link to={'/'+label.toLowerCase()}
                         className="opacity-60 cursor-pointer hover:opacity-100 transition-all duration-300 ease-in-out" 
                         >
                             {label}
