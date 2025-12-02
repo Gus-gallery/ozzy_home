@@ -11,12 +11,12 @@ const Norway = () => {
                     Norway, 2024.
                 </h1>
                 <p className="font-regular text-md text-secondary">
-                    A series of photography from half a year in Norway.
+                    A series of photography from half a year in Norwegian nature.
                 </p>
             </div>
 
             <div className="mt-4 grid grid-cols-1 xl:grid-cols-2 gap-2">
-                {[1,2,3,4,5,6,7,8,9,10].map((num) => (
+                {[1,2,3,4,5,6,7,8,9,10,11,12,13,14].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
                         src={`/nw/${num}.jpg`} 
