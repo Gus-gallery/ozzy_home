@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const NavBar = () => {
 
-    const label = ["Projects", "Highlights", "About",];
+    const label = ["Projects", "About",];
 
   return (
     <header className="sticky -top-1  text-primary bg-backgroundsecondary z-20">
