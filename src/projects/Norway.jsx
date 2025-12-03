@@ -5,7 +5,7 @@ const Norway = () => {
   return (
     <div>
         <NavBar />
-        <div className="container mx-auto px-2">
+        <div className="container mx-auto px-2 mt-12">
             <div className="flex flex-col md:max-w-1/2 mx-auto text-center">
                 <h1 className="font-bold text-2xl text-primary mt-8">
                     Norway, 2024.
@@ -16,7 +16,29 @@ const Norway = () => {
             </div>
 
             <div className="mt-4 grid grid-cols-1 xl:grid-cols-2 gap-2 pb-4">
-                {[1,2,3,4,5,6,7,8,9,10,11,12,13,14].map((num) => (
+                {[1,2,3,4,5,6,8,9].map((num) => (
+                    <div key={num} className="w-full h-auto">
+                        <img 
+                        src={`/nw/${num}.jpg`} 
+                        alt={`Norway ${num}`} 
+                        className="w-full h-auto object-cover"
+                        />
+                    </div>
+                ))}
+            </div>
+            <div className="-mt-2 grid grid-cols-1 gap-2 -mb-2">
+                {[11].map((num) => (
+                    <div key={num} className="w-full h-auto">
+                        <img 
+                        src={`/nw/${num}.jpg`} 
+                        alt={`Norway ${num}`} 
+                        className="w-full h-auto object-cover"
+                        />
+                    </div>
+                ))}
+            </div>
+            <div className="mt-4 grid grid-cols-1 xl:grid-cols-2 gap-2 pb-4">
+                {[10,12,13,14].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
                         src={`/nw/${num}.jpg`} 
