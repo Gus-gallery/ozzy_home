@@ -9,9 +9,9 @@ const bgImages = [
     },
     {
         id: 2,
-        name: "Monkey",
+        name: "Bird",
         place: "Tanzania 2025.",
-        image: "/slides/2.jpeg",
+        image: "/af/20.jpeg",
     },
     {
         id: 3,

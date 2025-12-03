@@ -6,7 +6,7 @@ const Denmark = () => {
     <div>
         <NavBar />
         <div className="container mx-auto px-2 mt-12">
-            <div className="flex flex-col md:max-w-1/2 mx-auto text-center">
+            <div className="flex flex-col md:max-w-1/2 mx-auto text-center mb-16 ">
                 <h1 className="font-bold text-2xl text-primary mt-8">
                     Denmark, 2025.
                 </h1>
