@@ -5,37 +5,37 @@ const bgImages = [
         id: 1,
         name: "Red bird",
         place: "Tanzania 2025.",
-        image: "/slides/1.jpeg",
+        image: "/ozzy_home/slides/1.jpeg",
     },
     {
         id: 2,
         name: "Bird",
         place: "Tanzania 2025.",
-        image: "/af/20.jpeg",
+        image: "/ozzy_home/af/20.jpeg",
     },
     {
         id: 3,
         name: "Bird",
         place: "Denmark 2025.",
-        image: "/slides/3.jpg",
+        image: "/ozzy_home/slides/3.jpg",
     },
     {
         id: 4,
         name: "Yellow bird",
         place: "Denmark 2025.",
-        image: "/slides/4.jpeg",
+        image: "/ozzy_home/slides/4.jpeg",
     },
     {
         id: 5,
         name: "Spider",
         place: "Tanzania 2025.",
-        image: "/slides/5.jpeg",
+        image: "/ozzy_home/slides/5.jpeg",
     },
     {
         id: 6,
         name: "Krage",
         place: "Norway 2024.",
-        image: "/nw/2.jpg",
+        image: "/ozzy_home/nw/2.jpg",
     },
 ]
 

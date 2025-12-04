@@ -19,7 +19,7 @@ const Tanzania = () => {
                 {[1,2].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/af/${num}.jpeg`} 
+                        src={`/ozzy_home/af/${num}.jpeg`} 
                         alt={`Tanzania ${num}`} 
                         className="w-full h-auto object-cover"
                         />
@@ -30,7 +30,7 @@ const Tanzania = () => {
                 {[3].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/af/${num}.jpeg`} 
+                        src={`/ozzy_home/af/${num}.jpeg`} 
                         alt={`Norway ${num}`} 
                         className="w-full h-auto object-cover"
                         />
@@ -41,7 +41,7 @@ const Tanzania = () => {
                 {[4,5,6,7,8,9,10,11].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/af/${num}.jpeg`} 
+                        src={`/ozzy_home/af/${num}.jpeg`} 
                         alt={`Tanzania ${num}`} 
                         className="w-full h-auto object-cover"
                         />
@@ -52,7 +52,7 @@ const Tanzania = () => {
                 {[12].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/af/${num}.jpeg`} 
+                        src={`/ozzy_home/af/${num}.jpeg`} 
                         alt={`Norway ${num}`} 
                         className="w-full h-auto object-cover"
                         />
@@ -63,7 +63,7 @@ const Tanzania = () => {
                 {[13,14,15,16,17,18,19,20].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/af/${num}.jpeg`} 
+                        src={`/ozzy_home/af/${num}.jpeg`} 
                         alt={`Tanzania ${num}`} 
                         className="w-full h-auto object-cover"
                         />
@@ -74,7 +74,7 @@ const Tanzania = () => {
                 {[21].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/af/${num}.jpg`} 
+                        src={`/ozzy_home/af/${num}.jpg`} 
                         alt={`Tanzania ${num}`} 
                         className="w-full h-auto object-cover"
                         />

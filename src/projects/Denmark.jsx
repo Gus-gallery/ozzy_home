@@ -19,7 +19,7 @@ const Denmark = () => {
                 {[1,2].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/dk/${num}.jpg`} 
+                        src={`/ozzy_home/dk/${num}.jpg`} 
                         alt={`Denmark ${num}`} 
                         className="w-full h-auto object-cover"
                         />
@@ -30,7 +30,7 @@ const Denmark = () => {
                 {[3].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/dk/${num}.jpg`} 
+                        src={`/ozzy_home/dk/${num}.jpg`} 
                         alt={`Denmark ${num}`} 
                         className="w-full h-auto object-cover"
                         />
@@ -41,7 +41,7 @@ const Denmark = () => {
                 {[4,5,6,7,8,9].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/dk/${num}.jpg`} 
+                        src={`/ozzy_home/dk/${num}.jpg`} 
                         alt={`Denmark ${num}`} 
                         className="w-full h-auto object-cover"
                         />

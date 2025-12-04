@@ -19,7 +19,7 @@ const Norway = () => {
                 {[1,3].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/nw/${num}.jpg`} 
+                        src={`/ozzy_home/nw/${num}.jpg`} 
                         alt={`Norway ${num}`} 
                         className="w-full h-auto object-cover"
                         />
@@ -30,7 +30,7 @@ const Norway = () => {
                 {[2].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/nw/${num}.jpg`} 
+                        src={`/ozzy_home/nw/${num}.jpg`} 
                         alt={`Norway ${num}`} 
                         className="w-full h-auto object-cover"
                         />
@@ -41,7 +41,7 @@ const Norway = () => {
                 {[4,5,9,8].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/nw/${num}.jpg`} 
+                        src={`/ozzy_home/nw/${num}.jpg`} 
                         alt={`Norway ${num}`} 
                         className="w-full h-auto object-cover"
                         />
@@ -52,7 +52,7 @@ const Norway = () => {
                 {[6].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/nw/${num}.jpg`} 
+                        src={`/ozzy_home/nw/${num}.jpg`} 
                         alt={`Norway ${num}`} 
                         className="w-full h-auto object-cover"
                         />
@@ -63,7 +63,7 @@ const Norway = () => {
                 {[11].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/nw/${num}.jpg`} 
+                        src={`/ozzy_home/nw/${num}.jpg`} 
                         alt={`Norway ${num}`} 
                         className="w-full h-auto object-cover"
                         />
@@ -74,7 +74,7 @@ const Norway = () => {
                 {[10,12,13,14].map((num) => (
                     <div key={num} className="w-full h-auto">
                         <img 
-                        src={`/nw/${num}.jpg`} 
+                        src={`/ozzy_home/nw/${num}.jpg`} 
                         alt={`Norway ${num}`} 
                         className="w-full h-auto object-cover"
                         />
