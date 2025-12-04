@@ -8,11 +8,16 @@ const NavBar = () => {
   return (
     <header className="sticky -top-1  text-primary bg-backgroundsecondary shadow-md z-20">
         <nav className="flex flex-wrap items-center text-center p-4 px-6 justify-between">
-            <Link to="/" className="text-lg font-bold">
+            
+            <Link to="/" className="w-60 text-left text-lg font-bold">
                 Oskar Peitersen Photo
             </Link>
 
-            <ul className="flex justify-end items-center text-center gap-8 font-regular text-base">
+            <h1 className="opacity-0 lg:opacity-60 text-center text-primary font-medium md:font-medium text-md ">
+                Wildlife photography portfolio by Oskar Peitersen.
+            </h1>
+
+            <ul className="w-60 flex justify-start sm:justify-end items-center text-center gap-8 font-regular text-base">
                 {label.map((label) => (
                     <li key={label}>
 
