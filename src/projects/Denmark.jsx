@@ -3,7 +3,7 @@ import NavBar from '../components/Navbar'
 
 const Denmark = () => {
     const [selectedImage, setSelectedImage] = useState(null);
-    
+
   return (
     <div>
         <NavBar />
@@ -23,7 +23,8 @@ const Denmark = () => {
                         <img 
                         src={`/ozzy_home/dk/${num}.jpg`} 
                         alt={`Denmark ${num}`} 
-                        className="w-full h-auto object-cover"
+                        className="w-full h-auto object-cover cursor-pointer"
+                        onClick={() => setSelectedImage(`/ozzy_home/dk/${num}.jpg`)}
                         />
                     </div>
                 ))}
@@ -34,7 +35,8 @@ const Denmark = () => {
                         <img 
                         src={`/ozzy_home/dk/${num}.jpg`} 
                         alt={`Denmark ${num}`} 
-                        className="w-full h-auto object-cover"
+                        className="w-full h-auto object-cover cursor-pointer"
+                        onClick={() => setSelectedImage(`/ozzy_home/dk/${num}.jpg`)}
                         />
                     </div>
                 ))}
@@ -45,12 +47,26 @@ const Denmark = () => {
                         <img 
                         src={`/ozzy_home/dk/${num}.jpg`} 
                         alt={`Denmark ${num}`} 
-                        className="w-full h-auto object-cover"
+                        className="w-full h-auto object-cover cursor-pointer"
+                        onClick={() => setSelectedImage(`/ozzy_home/dk/${num}.jpg`)}
                         />
                     </div>
                 ))}
             </div>
         </div>
+        {selectedImage && (
+            <div
+                className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+                onClick={() => setSelectedImage(null)}
+            >
+                <img
+                src={selectedImage}
+                alt="Selected"
+                className="max-w-[90vw] max-h-[90vh] object-contain"
+                onClick={(e) => e.stopPropagation()}
+                />
+            </div>
+        )}
     </div>
   )
 }
