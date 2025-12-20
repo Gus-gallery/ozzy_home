@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBar from '../components/Navbar'
 
 const Denmark = () => {
+    const [selectedImage, setSelectedImage] = useState(null);
+    
   return (
     <div>
         <NavBar />
